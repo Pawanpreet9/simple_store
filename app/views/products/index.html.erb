@@ -1,9 +1,15 @@
+<!-- Name: Pawanpreet Kaur
+    Date: June 8, 2023
+    Challenge5
+-->
 <h1>All Products:</h1>
+<div>
 <ul>
     <!-- looping through product data to display the list of Products.-->
     <% @products.each do |eachProduct| %>
     <li>
-        <p><%= eachProduct.title%></p>
+
+        <p><%= link_to eachProduct.title, product_path(eachProduct) %></p>
         <p>Price:<%= eachProduct.price%><br>  Stock Quantity: <%= eachProduct.stock_quantity %></p>
         <hr>
         <%end%>
@@ -11,4 +17,4 @@
     </li>
 <ul>
 
-
+</div>
