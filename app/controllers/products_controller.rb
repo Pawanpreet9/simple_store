@@ -1,3 +1,7 @@
+#   Name: Pawanpreet Kaur
+#   Date: June 15, 2023
+#   Challenge5
+
 class ProductsController < ApplicationController
 
   def index
